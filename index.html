@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LearnX</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="./image/x-icon" />
+        <link rel="stylesheet" href="./css/index.css">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="./js/index.js"></script>
+        <script>
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $("nav").addClass("black");
+                } else {
+                    $("nav").removeClass("black");
+                }
+            });
+        </script>
+    </head>
+    <body>
+
+      <!-- navbar section start -->
+<header id="header">
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="#subject">Subjects</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+        </ul>
+        <!-- <div class="search">
+            <input type="text"  class="srch" placeholder="Search here">
+            <i class="fa fa-search fa-lg"></i>
+        </div> -->
+        <a href="./login.html" class="getstarted">Get started</a>
+        <i id="bar" onclick="sidemenu(0)" class="fa fa-bars fa-lg"></i>
+    </nav>
+    <div class="head">
+        <div class="quote">
+            <p>The beautiful thing about learning is that nobody can
+                take it away from you</p>
+                <h5>Education is the process of facilitating learning, or
+                    the acquisition of knowledge, skills, values, beliefs,
+                    and habits. Educational methods include teaching,
+                    training, storytelling, discussion and directed
+                    research!</h5>
+        </div>
+        <div class="headimg"><img src="./images/head.png" alt=""></div>
+    </div>
+    <div class="sidemenu" id="sidemenu">
+        <i id="close" onclick="sidemenu(1)" class="fa fa-times fa-2x">
+        </i>
+        <ul>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul> 
+    </div>
+</header>
+<!-- navbar section end -->
+      <!-- Popular Subjects Section -->
+      
+      <section>
+        <div class="title" id="subject">
+          <p style="font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;">Popular Subjects on LearnX</p>
+      </div>
+      <br /><br />
+      <div class="course">
+        
+          <div class="cbox">
+            <div class="det">
+              <a href="./pages/jee.html" ><i id="icon" class="fa fa-cogs fa-lg"></i>JEE Preparation</a>
+            </div>
+            <div class="det">
+              <a href="./pages/gate.html"><i id="icon" class="fa fa-book fa-lg"></i>GATE Preparation</a>
+            </div>
+            <div class="det">
+              <a href="./pages/jee.html"><i id="icon" class="fa fa-file-pdf-o fa-lg" ></i> Sample Papers</a>
+            </div>
+            <div class="det">
+              <a href="./pages/quizz.html"><i id="icon" class="fa fa-question-circle fa-lg"></i>Daily Quiz</a>
+            </div>
+          <div class="det">
+            <a href="./pages/computer.html"><i  id="icon" class="fa fa-desktop fa-lg"></i>Computer Courses</a>
+          </div>
+          <div class="det">
+            <a href="./pages/computer.html#data"><i id="icon" class="fa fa-sitemap fa-lg"></i>Data Structures</a>
+          </div>
+          <div class="det">
+            <a href="./pages/computer.html#algo"><i  id="icon" class="fa fa-file-code-o fa-lg"></i>Algorithm</a>
+          </div>
+          <div class="det det-last">
+            <a href="./pages/project.html#projects"><i id="icon" class="fa fa-tasks fa-lg"></i>Projects</a>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    
+    <section>
+      <div class="diff_Section" id="about_section">
+        <center><p style="font-size: 50px; padding: 60px;color: black;">About Us</p></center>
+        <div class="about-content">
+          <div class="side-image">
+            <img class="sideImage" src="./images/onlineEdu.jpg" />
+          </div>
+          <div class="side-text">
+            <h2>What you think about us ?</h2>
+            <p>
+              Education is the process of facilitating learning, or the
+              acquisition of knowledge, skills, values, beliefs, and habits.
+              Educational methods include teaching, training, storytelling,
+              discussion and directed research.<br />
+              Educational website can include websites that have games, videos
+              or topic related resources that act as tools to enhance learning
+              and supplement classroom teaching. These websites help make the
+              process of learning entertaining and attractive to the student,
+              especially in today's age. <br />Using HTML(HyperText Markup
+              Language), CSS(Cascading Style Sheet), JavaScript, we can make
+              learning more easier and in a interesting way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section END -->
+    
+    
+    <!-- portfolio section start -->
+    <div class="port" id="portfolio_section">
+      <p
+      style="
+                    font-size: 50px;
+                    margin-top: 110px;
+                    text-align: center;
+                    /* padding: 100px;
+                        padding-bottom: 40px; */
+                "
+            >
+                Portfolio
+            </p>
+
+            <div class="content">
+                <p>
+                    “Education is the passport to the future, for tomorrow
+                    belongs to those who prepare for it today.” “Your attitude,
+                    not your aptitude, will determine your altitude.” “If you
+                    think education is expensive, try ignorance.” “The only
+                    person who is educated is the one who has learned how to
+                    learn …and change.”
+                </p>
+            </div>
+        </div>
+        <div class="extra">
+            <p>We're increasing this data every year</p>
+            <div class="smbox">
+                <span
+                    ><center>
+                        <div class="data">984</div>
+                        <div class="det">Enrolled Students</div>
+                    </center></span
+                >
+                <span
+                    ><center>
+                        <div class="data">62</div>
+                        <div class="det">Total Courses</div>
+                    </center></span
+                >
+                <span
+                ><center>
+                  <div class="data">896</div>
+                        <div class="det">Placed Students</div>
+                      </center></span
+                      >
+                      <span
+                      ><center>
+                        <div class="data">27</div>
+                        <div class="det">Total Projects</div>
+                      </center></span
+                      >
+                    </div>
+                  </div>
+                  <!-- portfolio section end -->
+                  
+                  
+                  
+                  <!-- Services Start  -->
+              
+              
+                  <section class="services" id="service">
+                    <center>
+                      <p>Services</p>
+                    </center>
+              
+                    <div class="all-service">
+                      <a href="./pages/computer.html"
+                        ><div class="scards">
+                          <img src="./images/MONITER.png" alt="" />
+                          <p>Free Online Computer Cources</p>
+                        </div></a>
+                        <a href="./pages/jee.html">
+              
+                          <div class="scards">
+                            <img src="./images/discussion.png" alt="" />
+                            <p>Building Concepts for Competitive Exams</p>
+                          </div>
+                        </a>
+                        <a href="#subject">
+                          
+                          <div class="scards">
+                            <img src="./images/video-lecture.png" alt="" />
+                            <p>Online Video Lectures </p>
+                          </div>
+                        </a>
+              
+                        <a href="./pages/jee.html">
+              
+                          <div class="scards">
+                            <img src="./images/document (1).png" alt="" />
+                            <p>Sample Paper of Various Competitive Exams</p>
+                          </div>
+                        </a>
+                        <a href="#">
+              
+                          <div class="scards">
+                            <img src="./images/p3.png" alt="" />
+                            <p>Performance and Ranking Report</p>
+                          </div>
+                        </a>
+                        <a href="#contact_section">
+              
+                          <div class="scards">
+                            <img src="./images/discussion (1).png" alt="" />
+                            <p>Discussion with Our Tutors & Mentors</p>
+                          </div>
+                        </a>
+                        <a href="./pages/quizz.html">
+              
+                          <div class="scards">
+                            <img src="./images/albert-einstein.png" alt="" />
+                            <p>Brainly Brain Testing Questions to improve IQ </p>
+                          </div>
+                        </a>
+                        <a href="#contact_section">
+              
+                          <div class="scards">
+                            <img src="./images/help.png" alt="" />
+                            <p>24X7 Online Support</p>
+                          </div>
+                        </a>  
+                        </div>
+                  </section>
+              
+                  <!-- Servives End -->
+
+                  <!-- Reviews -->
+
+     <div id="makeitfull">
+    <a href="#review_section"><img src="./images/makeitfull.png" /></a>
+  </div>
+  <div class="review">
+    <div class="diffSection" id="review_section">
+      <center>
+        <p
+          style="
+            font-size: 40px;
+            padding: 100px;
+            padding-bottom: 40px;
+            color: #2e3d49;
+          "
+        >
+          What the Students Say About Us?
+        </p>
+      </center>
+    </div>
+    <div class="rev-container">
+      <div class="rev-card">
+        <div class="identity">
+          <img src="./images/review3.jfif" />
+          <p>Aditi Sharma</p>
+          <h6>Artificial Intelligence</h6>
+          <div class="rating">
+            <img src="./images/star.png" /><img src="./images/star.png" /><img
+              src="./images/star.png"
+            /><img src="./images/star.png" /><img src="./images/star.png" />
+          </div>
+        </div>
+        <div class="rev-cont">
+          <p id="title">Review:</p>
+          <p id="content">
+            I always wanted to learn Artificial Intelligence. AI excites me alot, like whenever I heard or see its real life applications, really fascinates me alot. One of my friend recommeends me LearnX. I enrolled, and then boom, LearnX has the best AI course which not only makes me comfortable with programming but also now I'm working as an AI Analyst at Tesla.
+          </p>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="identity">
+          <img src="./images/review5.jpg" />
+          <p>Hritik Teja</p>
+          <h6>C/C++</h6>
+          <div class="rating">
+            <img src="./images/star.png" /><img src="./images/star.png" /><img
+              src="./images/star.png"
+            /><img src="./images/star.png" /><img src="./images/star.png" />
+          </div>
+        </div>
+        <div class="rev-cont">
+          <p id="title">Review:</p>
+          <p id="content">
+            This is the most comprehensive course on C++ I've ever encountered. Like seriously, the tutorials are really very easy to understand and now I've made my foundation strong in C++, which will help me to in competitive programming also. I would seriously recommend LearnX to anyone who is looking to learn anything. 
+          </p>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="identity">
+          <img src="./images/review7.jpg" />
+          <p>Bhavana Singh</p>
+          <h6>JEE</h6>
+          <div class="rating">
+            <img src="./images/star.png" /><img src="./images/star.png" /><img
+              src="./images/star.png"
+            /><img src="./images/star.png" /><img src="./images/star.png" />
+          </div>
+        </div>
+        <div class="rev-cont">
+          <p id="title">Review:</p>
+          <p id="content">
+            LearnX is really an amazing platform. I am preparing for one of the hardest competitive exam JEE and believe me it's the best learning platform I've ever seen. Physics tutorials are really so good that now I can unerstand each and evrything on my own. In mock tests also I'm doing so good like never before. Thank you for providing such an excellent platform.
+          </p>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="identity">
+          <img src="./images/review4.jfif" />
+          <p>Dev Kapoor</p>
+          <h6>Data Structures</h6>
+          <div class="rating">
+            <img src="./images/star.png" /><img src="./images/star.png" /><img
+              src="./images/star.png"
+            /><img src="./images/star.png" /><img src="./images/star.png" />
+          </div>
+        </div>
+        <div class="rev-cont">
+          <p id="title">Review:</p>
+          <p id="content">
+            This is the best course I've ever seen on a Data Stuctures. Data Structures are really very important aspect to learn when you are learning coding. I want to thank LearnX for providing such a good tutorials, the assignments are challenging but way too good if you are looking for strong fundamentals in DS. Now I'm working as SDE at Amazon.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+         <!-- Team section start -->
+         <div class="diffSection" id="team_section">
+            <p>We're the Creators</p>
+            <div class="totalcard">
+                <div class="card">
+                    <center><img src="./191500660 (1).jpg" /></center>
+                    <center>
+                        <div class="card-title">Ritik Gupta</div>
+                        <div id="detail">
+                            <p>
+                                “ You can teach a student a lesson for a day;
+                                but if you can teach him to learn by creating
+                                curiosity, he will continue the learning process.
+                                 “
+                            </p>
+                            <div class="duty"></div>
+                            <a
+                                href="http://www.linkedin.com/in/kanak-srivastava-967b531a9"
+                                target="_blank"
+                                ><button class="btn-kanak">Follow +</button></a
+                            >
+                        </div>
+                    </center>
+                </div>
+                <div class="card">
+                    <center><img src="./WhatsApp Image 2021-11-29 at 10.21.24 AM 1.jpg" /></center>
+                    <center>
+                        <div class="card-title">Saijal Gupta</div>
+                        <div id="detail">
+                            <p>
+                                “ Real education should consist of drawing the
+                                goodness and the best out of our own students.
+                                What better books can there be than the book of
+                                humanity “
+                            </p>
+                            <div class="duty"></div>
+                            <a
+                                href="https://www.linkedin.com/in/jai-singh-49931b1a0"
+                                target="_blank"
+                                ><button class="btn-jai">Follow +</button></a
+                            >
+                        </div>
+                    </center>
+                </div>
+                <div class="card">
+                    <center><img src="./191500297.jpg" /></center>
+                    <center>
+                        <div class="card-title">Gaurav Yadav</div>
+                        <div id="detail">
+                            <p>
+                                “ Education is one of the most powerful things
+                                in life. It allows us to find the meaning behind
+                                everything and helps improve lives in a massive
+                                way “
+                            </p>
+                            <div class="duty"></div>
+                            <a
+                                href="https://www.linkedin.com/in/farddin-khan-2958b91b6"
+                                target="_blank"
+                                ><button class="btn-farddin">
+                                    Follow +
+                                </button></a
+                            >
+                        </div>
+                    </center>
+                </div>
+                <!-- <div class="card">
+                    <center><img src="./images/Aditya.jpeg" /></center>
+                    <center>
+                        <div class="card-title">Aditya Pratap Singh</div>
+                        <div id="detail">
+                            <p>
+                                “ Education is the first step for people to gain
+                                the knowledge, critical thinking, empowerment
+                                and skills they need to make this world a better
+                                place. “
+                            </p>
+                            <div class="duty"></div>
+                            <a
+                                href="https://www.linkedin.com/in/aditya-pratap-singh-16a0b8144"
+                                target="_blank"
+                                ><button class="btn-aditya">Follow +</button></a
+                            >
+                        </div>
+                    </center>
+                </div> -->
+            </div>
+        </div>
+        <!-- team section end -->
+
+
+
+        <!-- Contact us section start -->
+        <section class="contact">
+            <div class="content" id="contact_section">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="csec"></div>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h2>Address</h2>
+                            <p>GLA UNIVERSITY, Mathura</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a style="color: black;" href="tel:+91-7984-176-692"><div class="icon"><i class="fas fa-phone-alt"></i></div></a>
+                        <div class="text">
+                          <h2>Phone</h2>                                                     
+                            <p>+91-7984-176-692</p>                         
+                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a style="color: black;" href="mailto:learnxlearning@gmail.com">
+                          <div class="icon"><i class="far fa-envelope"></i></div>
+                        </a>
+                        <div class="text">
+                            <h2>Email</h2>                            
+                              <p>learnxlearning@gmail.com</p>                           
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="" method="POST">
+                        <h2>Get In Touch</h2>
+                        <div class="input-box">
+                            <input type="text" name="" class="name" required />
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                type="email"
+                                name=""
+                                class="email"
+                                required
+                            />
+                            <span>Email</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea class="message" cols="30" rows="10" required></textarea>
+                            <span>Your message</span>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                type="button"
+                                value="Submit"
+                                onclick="handleSubmit()"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+            function handleSubmit() {
+                // console.log("function called");
+                sendMailToClient();
+            }
+
+            function sendMailToClient() {
+                var name = document.querySelector(".name").value;
+                var email = document.querySelector(".email").value;
+                var message = document.querySelector(".message").value;
+                Email.send({
+                    SecureToken: "7843f900-6b48-463a-8bfd-35a702fab679",
+                    To: email,
+                    From: "learnxlearning@gmail.com",
+                    Subject: "Greetings from LearnX",
+                    Body: "Thank you for connecting with us. Our team will contact you soon.",
+                }).then((message) =>
+                    alert(
+                        "Thank you connecting with us. Our team will contact you soon"
+                    )
+                );
+
+                document.querySelector(".name").value = "";
+                document.querySelector(".email").value = "";
+                document.querySelector(".message").value = "";
+            }
+        </script>
+
+        <!-- Contact us section end -->
+    
+    
+    <!-- FEEDBACK CODE -->
+    
+        <div class="feedback" id="feedback">
+          <div class="heading">
+            <h1>Give Feedback</h1>
+            <p>  Please share your valuable feedback to us</p>
+          </div>
+          <div class="feed-container">
+            <div class="feed-form">
+              <form action="mailto:farddinkhan733@gmail.com" method="post">
+                <label for=""> Your Name</label>
+                <br><input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="" >Email</label>
+                <br>
+                <input type="text" id="em">
+                <br><br>
+                <label for="">Additional Details</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                </textarea>
+                <br><br>
+                <button type="submit" class="bt">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <!--  feedback end -->
+    
+        <!-- Marque line start -->
+        <marquee style="background: linear-gradient(to right, #a83279, #ffbb3b, #a83279); margin-top: 50px;padding: 10px 0;" 
+        direction="left" onmouseover="this.stop()" 
+        onmouseout="this.start()" scrollamount="20">
+        
+        <div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who 
+          prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If 
+          you think education is expensive, try ignorance.” “The only person who is educated is the one 
+          who has learned how to learn …and change.”</div>
+        
+        
+        </marquee>
+        <!-- Marque headline end -->
+    
+        
+
+        <!-- Footer Section-->
+        <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="./images/LearnX_Logo.png" style="width: 200px" />
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="#"><img src="./images/fb.png" /></a>
+            <a href="#"><img src="./images/ytube.png" /></a>
+            <a href="#"><img src="./images/insta.png" /></a>
+            <a href="#"><img src="./images/linkedin.png" /></a>
+            <a href="#"><img src="./images/tt.png" /></a>
+          </div>
+          <br /><br />
+          <br>
+          <p class="rights-text">
+            Copyright © 2022 Created By LearnX Team All Rights Reserved.
+            <br>
+            <br>
+          </p>
+          <br />
+          <p>
+            <img src="./images/location.png" /> GLA University<br />Mathura,
+            Uttar Pradesh-281406
+            <br>
+            <br>
+          </p>
+          <br />
+          <a style="text-decoration: none; color: white; font-size: 16px;" href="mailto:learnxlearning@gmail.com"
+              ><img src="./images/mail.png" />&nbsp; learnxlearning@gmail.com</a
+            ><br /><br>
+            <a style="text-decoration: none; color: white; font-size: 16px;" href="tel:+91-7984-176-692"
+              ><img src="./images/phone.png" /> +91-7984-176-692<br
+            /></a>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br />
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email" />
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- <script>
+      window.onload = () => {
+          if (!sessionStorage.getItem("LXID")) {
+              let my_url = "./login.html";
+              setTimeout(function () {
+                  window.location.replace(my_url);
+              }, 18000);
+          }
+      };
+  </script> -->
+        </body>
+</html>

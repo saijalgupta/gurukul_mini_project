@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Login</title>
+  <!-- <link rel="icon" href="./util/favicon1.ico" type="image/x-icon" /> -->
+  <link rel="stylesheet" href="./css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="main-container">
+    <div id="mobile-heading">
+      <h2>welcome to LearnX</h2>
+    </div>
+    <div class="login-container">
+      <div class="image">
+        <h2 id="typing-head">Welcome to LearnX</h2>
+        <img src="./images/Logo.png" class="photo" />
+      </div>
+      <div class="login">
+        <h2>Login</h2>
+        <form id="form" onsubmit="verification(event)">
+          <field class="input-field">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" class="input" autofocus />
+            <span class="border"></span>
+          </field>
+          <field class="input-field">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" class="input">
+            <i class="far fa-eye show" onclick="show(event)"></i>
+            </input>
+            <span class="border"></span>
+          </field>
+          <field class="remember-field">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+          </field>
+          <input type="submit" class="pointer" id="_login" value="Login" />
+          <p id="loading" style="text-align: center;">
+            <svg width="45px" height="30px" viewBox="0 0 51 50">
+
+              <rect y="0" width="10" height="30" fill="#1fa2ff">
+                  <animate attributeName="height" values="30;8;30" begin="0s" dur="1s" repeatCount="indefinite" />
+                  <animate attributeName="y" values="0;10;0" begin="0s" dur="1s" repeatCount="indefinite" />
+              </rect>
+          
+              <rect x="16" y="0" width="10" height="30" fill="#12d8fa">
+                  <animate attributeName="height" values="30;8;30" begin="0.2s" dur="1s" repeatCount="indefinite" />
+                  <animate attributeName="y" values="0;10;0" begin="0.2s" dur="1s" repeatCount="indefinite" />
+              </rect>
+          
+              <rect x="35" y="0" width="10" height="30" fill="#06ffcb">
+                  <animate attributeName="height" values="30;8;30" begin="0.4s" dur="1s" repeatCount="indefinite" />
+                  <animate attributeName="y" values="0;10;0" begin="0.4s" dur="1s" repeatCount="indefinite" />
+              </rect>
+          
+          </svg>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="footer" style="color: white;">© 2021 All Rights Reserved. LearnX</div>
+  </div>
+  <div id="main">
+    <h1>LearnX</h1>
+    <form id="mobile-form" onsubmit="verification(event)">
+      <input type="email" placeholder="email" class="in" id="m-mail" autofocus />
+      <field class="input-field">
+        <input type="password" placeholder="password" class="in" id="m-pass">
+        <i class="far fa-eye show" id="m-eye" onclick="show(event)"></i>
+        </input>
+      </field>
+      <span id="rem">
+        <div>
+          <input type="checkbox" id="m-remember" />
+          <label for="remember"> Remember Me</label>
+        </div>
+      </span>
+      <button type="submit">
+        <a href="" id="_login">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </button>
+      <div class="packet">
+        <div id="follow"></div>
+      </div>
+      <p id="loading" style="color:white;">
+        <svg width="45px" height="30px" viewBox="0 0 51 50">
+
+          <rect y="0" width="10" height="30" fill="#12d8fa">
+              <animate attributeName="height" values="30;8;30" begin="0s" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="y" values="0;10;0" begin="0s" dur="1s" repeatCount="indefinite" />
+          </rect>
+      
+          <rect x="16" y="0" width="10" height="30" fill="#ffffff">
+              <animate attributeName="height" values="30;8;30" begin="0.2s" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="y" values="0;10;0" begin="0.2s" dur="1s" repeatCount="indefinite" />
+          </rect>
+      
+          <rect x="35" y="0" width="10" height="30" fill="#06ffcb">
+              <animate attributeName="height" values="30;8;30" begin="0.4s" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="y" values="0;10;0" begin="0.4s" dur="1s" repeatCount="indefinite" />
+          </rect>
+      
+      </svg>
+      </p>
+    </form>
+    <div id="social">
+      <a href="">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-twitter"> </i>
+      </a>
+      <a href="">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./JS/login.js">  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+  <script src="./JS/config.js"></script>
+  <script src="https://kit.fontawesome.com/4d63232f4c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

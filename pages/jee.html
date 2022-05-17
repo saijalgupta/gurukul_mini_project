@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prepare for JEE Mains & Advanced</title>
+        <link
+            rel="shortcut icon"
+            href="../images/favicon.ico"
+            type="./image/x-icon"
+        />
+        <script src="https://use.fontawesome.com/221de87d0a.js"></script>
+        <link rel="stylesheet" href="../css/Jee.css" />
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <header>
+            <div class="nav" id="nav">
+                <div id="learned-logo">
+                    <a href="../index.html"
+                        ><img src="../images/logo.png" style="width: 190px"
+                    /></a>
+                </div>
+                <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
+                <ul id="list-switch">
+                    <li>
+                        <a href="../pages/jee.html"
+                            ><i id="icon" class="fa fa-cogs fa-lg"></i>JEE</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/gate.html"
+                            ><i id="icon" class="fa fa-book fa-lg"></i>GATE</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/computer.html"
+                            ><i id="icon" class="fa fa-desktop fa-lg"></i
+                            >Computer Courses</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/computer.html#data"
+                            ><i id="icon" class="fa fa-sitemap fa-lg"></i>Data
+                            Structures</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/computer.html#algo"
+                            ><i id="icon" class="fa fa-file-code-o fa-lg"></i
+                            >Algorithm</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/project.html#projects"
+                            ><i id="icon" class="fa fa-tasks fa-lg"></i
+                            >Projects</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="title">
+            <span>Prepare for JEE Mains & Advanced<br />on LearnX</span>
+            <div class="shortdesc">
+                <p>
+                    Learn your basic concepts to prepare for a career in<br />Engineering
+                    and Medical fields
+                </p>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="course">
+            <div class="cbox">
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Projectile"
+                        target="_blank"
+                        >Projectile</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Snell%27s_law"
+                        target="_blank"
+                        >Snell's Law</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Light"
+                        target="_blank"
+                        >Light</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Maxwell%27s_equations"
+                        target="_blank"
+                        >Maxwell Equations</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Laser"
+                        target="_blank"
+                        >LASER</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Gravity"
+                        target="_blank"
+                        >Gravitation</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Inertia"
+                        target="_blank"
+                        >Inertia</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Current"
+                        target="_blank"
+                        >Current</a
+                    >
+                </div>
+            </div>
+            <div class="cbox">
+                <div class="det"><a href="#organic">Organic Chemistry</a></div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Thermodynamics"
+                        target="_blank"
+                        >Thermodynamics</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Chemical_process"
+                        target="_blank"
+                        >Chemical Process</a
+                    >
+                </div>
+                <div class="det">
+                    <a href="#physical">Physical Chemistry</a>
+                </div>
+                <div class="det">
+                    <a href="#inorganic">Inorganic Chemistry</a>
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Periodic_table"
+                        target="_blank"
+                        >Periodic Table</a
+                    >
+                </div>
+                <div class="det">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Equilibrium"
+                        target="_blank"
+                        >Equilibrium</a
+                    >
+                </div>
+            </div>
+            <div class="cbox">
+                <div class="det"><a href="#math">Differential</a></div>
+                <div class="det"><a href="#math">Calculus</a></div>
+                <div class="det"><a href="#math">Algebra</a></div>
+                <div class="det"><a href="#math">Trigonometry</a></div>
+                <div class="det"><a href="#math">Integration</a></div>
+                <div class="det"><a href="#math">Matrices</a></div>
+                <div class="det"><a href="#math">Determinants</a></div>
+                <div class="det"><a href="#math">Differentiation</a></div>
+            </div>
+        </div>
+        <script>
+            var i = 2;
+            function switchTAB() {
+                var x = document.getElementById("list-switch");
+                if (i % 2 == 0) {
+                    document.getElementById("list-switch").style =
+                        "display: grid; height: 50vh; margin-left: 5%;";
+                } else {
+                    document.getElementById("list-switch").style =
+                        "display: none;";
+                }
+                i++;
+            }
+        </script>
+        <!-- Quick links  -->
+        <div class="inbt">
+            Accelerate your career with JEE Main & Advanced programs
+        </div>
+        <div class="ccard">
+            <center>
+                <div class="ccardbox">
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/organic.jpg" />
+                        </div>
+                        <a href="#organic"
+                            ><div class="spart">
+                                2 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/inorganic.jpg" />
+                        </div>
+                        <a href="#inorganic"
+                            ><div class="spart">
+                                5 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/physical.jpg" />
+                        </div>
+                        <a href="#physical"
+                            ><div class="spart">
+                                3 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                </div>
+                <div class="ccardbox">
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/physics.jpg" />
+                        </div>
+                        <a href="#physics"
+                            ><div class="spart">
+                                6 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/math.jpg" />
+                        </div>
+                        <a href="#math"
+                            ><div class="spart">
+                                2 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                    <div class="dcard">
+                        <div class="fpart">
+                            <img src="../images/JEE-Main-Sample-Paper.png" />
+                        </div>
+                        <a href="#sample_papers"
+                            ><div class="spart">
+                                1 Courses
+                                <i
+                                    id="circle"
+                                    class="fa fa-chevron-circle-down fa-lg"
+                                ></i></div
+                        ></a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <!-- Quick links part end -->
+
+        <!-- Organic part -->
+        <div class="title2" id="organic">
+            <span>Organic Chemistry</span>
+            <div class="description">
+                <p>
+                    Make strong concepts in Organic Chemistry with great
+                    tutors...
+                </p>
+            </div>
+        </div>
+        <center>
+            <div class="videobox">
+                <div class="organic">
+                    <span class="tag">1/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">2/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">3/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">4/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="organic">
+                    <span class="tag">5/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">6/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">7/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">8/8</span>
+                    <div class="orgimg">
+                        <img src="../images/organic.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/bSMx0NS0XfY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <br /><br />
+        <div class="click-me">
+            <a
+                href="https://www.youtube.com/watch?v=bSMx0NS0XfY&list=PL8dPuuaLjXtONguuhLdVmq0HTKS0jksS4"
+                target="_blank"
+                >Click Here to Watch full playlist</a
+            >
+        </div>
+
+        <!-- organic part end -->
+
+        <!-- Inorganic part  -->
+        <div class="title2" id="inorganic">
+            <span>Inorganic Chemistry</span>
+            <div class="description">
+                <p>
+                    Make strong concepts in Inorganic Chemistry with great
+                    tutors...
+                </p>
+            </div>
+        </div>
+        <center>
+            <div class="videobox">
+                <div class="organic">
+                    <span class="tag">1/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/xNa5iW4gv6c"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">2/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/jD0uDPqlO_o"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">3/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/E8IzOXqmirA"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">4/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/MEP1hiIL1vU"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="organic">
+                    <span class="tag">5/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/8Zg5u5LLAKA"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">6/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/tuhHg6NUNp8"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">7/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/7UFDZis3uxM"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="organic">
+                    <span class="tag">8/8</span>
+                    <div class="orgimg">
+                        <img src="../images/inorganic.jpg" />
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/xH3AMGS2D-g"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <br /><br />
+        <div class="click-me">
+            <a
+                href="https://www.youtube.com/watch?v=xNa5iW4gv6c&list=PLKKfKV1b9e8rryr0t6HkjXgK3-PExQifx&index=1&t=112s&ab_channel=ApniKaksha"
+                target="_blank"
+                >Click Here to Watch full playlist</a
+            >
+        </div>
+        <!-- inorganic part end -->
+
+        <!-- physical chemistry -->
+        <div class="title2" id="physical">
+            <span style="font-size: 30px">Physical Chemistry</span>
+            <div class="shortdesc2">
+                <p style="font-size: 15px; font-family: sans-serif">
+                    Make your strong concepts in Physical Chemistry...
+                </p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2">
+                    <span class="tag">1/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/15ygVBZitso"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">2/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/WpyB6uSsrm4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">3/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/VQTxAuQbvqk"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">4/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/uUHUdE8fXvY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="dcard2">
+                    <span class="tag">5/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/WNLEnAek09U"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">6/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/NARFi994ncc"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">7/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/66CMcBftoaY"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">8/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physical.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/Ba2qtgsA7VI"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br /><br />
+        <div class="click-me">
+            <a
+                href="https://www.youtube.com/watch?v=15ygVBZitso&list=PLbu_fGT0MPsuT9pmkl2RuowDlIQ0OXI0l"
+                target="_blank"
+                >Click Here to Watch full playlist</a
+            >
+        </div>
+
+        <!-- physics -->
+        <div class="title2" id="physics">
+            <span>Physics</span>
+            <div class="shortdesc2">
+                <p style="font-size: 15px; font-family: sans-serif">
+                    Do you think Physics is hard? It's not join this lectures...
+                </p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2">
+                    <span class="tag">1/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/Ewx1bo3Vyzg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">2/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/QijmnDHE9II"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">3/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/f3mmkBbWO-w"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">4/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/ZgqH47_kBQE"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="dcard2">
+                    <span class="tag">5/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/I5I32B7aJxg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">6/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/u9lXrMCLf0g"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">7/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/2PUdWk7uFqA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">8/8</span>
+                    <div class="fpart2">
+                        <img src="../images/physics.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/x_VbHhBc9Rs"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br /><br />
+        <div class="click-me">
+            <a
+                href="https://www.youtube.com/watch?v=Ewx1bo3Vyzg&list=PLbu_fGT0MPsuUzCT6BZvto0hkcA3dEigi"
+                target="_blank"
+                >Click Here to Watch full playlist</a
+            >
+        </div>
+
+        <!-- Maths code by farddin -->
+
+        <div class="title2" id="math">
+            <span>Mathematics</span>
+            <div class="shortdesc2">
+                <p>Make Maths interesting with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2">
+                    <span class="tag">1/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">2/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">3/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">4/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="dcard2">
+                    <span class="tag">5/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">6/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">7/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="dcard2">
+                    <span class="tag">8/8</span>
+                    <div class="fpart2">
+                        <img src="../images/math.jpg" />
+                        <iframe
+                            src="https://www.youtube.com/embed/xxGyTHWrHZg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <br /><br />
+        <div class="click-me">
+            <a href="https://youtu.be/xxGyTHWrHZg" target="_blank"
+                >Click Here to Watch full playlist</a
+            >
+        </div>
+
+        <!-- SAMPLE PAPERS -->
+        <div class="title2" id="sample_papers">
+            <span>Sample Papers 2014-19</span>
+            <div class="shortdesc2">
+                <p>Practice more and more question papers</p>
+            </div>
+        </div>
+
+        <div class="sample">
+            <ul>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2014 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p2.pdf" target="_blank"
+                        >Sample Paper 2014 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p3.pdf" target="_blank"
+                        >Sample Paper 2014 Set-C</a
+                    >
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2015 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2015 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2015 Set-C</a
+                    >
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2016 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2016 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2016 Set-C</a
+                    >
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2017 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p2.pdf" target="_blank"
+                        >Sample Paper 2017 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p3.pdf" target="_blank"
+                        >Sample Paper 2017 Set-C</a
+                    >
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../samplepapers/p3.pdf" target="_blank"
+                        >Sample Paper 2018 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2018 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p2.pdf" target="_blank"
+                        >Sample Paper 2018 Set-C</a
+                    >
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../samplepapers/p3.pdf" target="_blank"
+                        >Sample Paper 2019 Set-A</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p1.pdf" target="_blank"
+                        >Sample Paper 2019 Set-B</a
+                    >
+                </li>
+                <li>
+                    <a href="../samplepapers/p2.pdf" target="_blank"
+                        >Sample Paper 2019 Set-C</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!--  sample paper end -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="left-col">
+                    <img src="../images/LearnX_Logo.png" style="width: 200px" />
+                    <div class="logo"></div>
+                    <div class="social-media">
+                        <a href="#"><img src="../images/fb.png" /></a>
+                        <a href="#"><img src="../images/ytube.png" /></a>
+                        <a href="#"><img src="../images/insta.png" /></a>
+                        <a href="#"><img src="../images/linkedin.png" /></a>
+                        <a href="#"><img src="../images/tt.png" /></a>
+                    </div>
+                    <br /><br />
+                    <br />
+                    <p class="rights-text">
+                        Copyright © 2021 Created By LearnX Team All Rights
+                        Reserved.
+                        <br />
+                        <br />
+                    </p>
+                    <br />
+                    <p>
+                        <img src="../images/location.png" /> GLA University<br />Mathura,
+                        Uttar Pradesh-281406
+                        <br />
+                        <br />
+                    </p>
+                    <br />
+                    <a
+                        style="
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                        "
+                        href="mailto:learnxlearning@gmail.com"
+                        ><img src="../images/mail.png" />&nbsp;
+                        learnxlearning@gmail.com</a
+                    ><br /><br />
+                    <a
+                        style="
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                        "
+                        href="tel:+91-7984-176-692"
+                        ><img src="../images/phone.png" /> +91-7984-176-692<br
+                    /></a>
+                </div>
+                <div class="right-col">
+                    <h1 style="color: #fff">Our Newsletter</h1>
+                    <div class="border"></div>
+                    <br />
+                    <p>Enter Your Email to get our News and updates.</p>
+                    <form class="newsletter-form">
+                        <input
+                            class="txtb"
+                            type="email"
+                            placeholder="Enter Your Email"
+                        />
+                        <input class="btn" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script>
+            window.onload = () => {
+                if (!sessionStorage.getItem("LXID")) {
+                    let my_url = "../login.html";
+                    setTimeout(function () {
+                        window.location.replace(my_url);
+                    }, 1000);
+                }
+            };
+        </script>
+    </body>
+</html>

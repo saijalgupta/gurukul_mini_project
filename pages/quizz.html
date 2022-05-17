@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz on LearnX</title>
+        <link rel="stylesheet" href="../css/quizz.css" />
+        <script src="https://use.fontawesome.com/221de87d0a.js"></script>
+        <link rel="shortcut icon" href="../images/favicon.ico" type="./image/x-icon" />
+        <script src="../JS/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="nav" id="nav">
+                <div id="learned-logo">
+                    <a href="../index.html"
+                        ><img src="../images/logo.png" style="width: 170px"
+                    /></a>
+                </div>
+                <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
+                <ul id="list-switch">
+                    <li>
+                        <a href="../pages/jee.html"
+                            ><i id="icon" class="fa fa-cogs fa-lg"></i>JEE</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/gate.html"
+                            ><i id="icon" class="fa fa-book fa-lg"></i>GATE</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/computer.html"
+                            ><i id="icon" class="fa fa-desktop fa-lg"></i
+                            >Computer Courses</a
+                        >
+                    </li>
+                   <li>
+                        <a href="../pages/computer.html#data"
+                            ><i id="icon" class="fa fa-sitemap fa-lg"></i>Data
+                            Structures</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/computer.html#algo"
+                            ><i id="icon" class="fa fa-file-code-o fa-lg"></i
+                            >Algorithm</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/project.html#projects"
+                            ><i id="icon" class="fa fa-tasks fa-lg"></i
+                            >Projects</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <script>
+            var i = 2;
+            function switchTAB() {
+                var x = document.getElementById("list-switch");
+                if (i % 2 == 0) {
+                    document.getElementById("list-switch").style =
+                        "display: grid; height: 50vh; margin-left: 5%;";
+                } else {
+                    document.getElementById("list-switch").style =
+                        "display: none;";
+                }
+                i++;
+            }
+        </script>
+        <div class="title" id="title">
+            <span>Daily Quiz on LearnX</span>
+            <div class="shortdesc">
+                <br />
+                <p>If you think education is expensive, try ignorance</p>
+            </div>
+            <button onclick="startquiz()">Start Now</button>
+        </div>
+
+        <div class="panel" id="panel">
+            <div class="left-side" id="left">
+                <ul>
+                    <li onclick="quizt(1)">HOME</li>
+                    <li onclick="quizt(2)">JEE Mains</li>
+                    <li onclick="quizt(3)">JEE Advanced</li>
+                    <li onclick="quizt(4)">GATE</li>
+                    <li onclick="quizt(5)">C/C++</li>
+                    <li onclick="quizt(6)">Java</li>
+                    <li onclick="quizt(7)">Python</li>
+                    <li onclick="quizt(8)">WebDevelopment</li>
+                    <li onclick="quizt(9)">Data Structures and Algorithm</li>
+                    <li onclick="quizt(10)">Quant</li>
+                    <li onclick="quizt(11)">Interview Questions</li>
+                </ul>
+            </div>
+            <div class="right-side" id="right">
+                <div id="quiz-container">
+                    
+                    <div id="f1"><div class="quiz-frame main-frame"></div></div>
+        
+                    <div id="f2"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfivUT7DljanslwDxs8VEIsKa50RM0ADJ_aP3Q5qVsVIrGVeQ/viewform?usp=sf_link">Loading…</iframe></div>
+                    
+                    <div id="f3"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdoxPtuVMTOHDf3fCwIaBEbmMHoRwOrUAfBPcnnxRkCITi8RQ/viewform?usp=sf_link">Loading…</iframe></div>
+                    
+                    <div id="f4"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdvOpvDPTayVymWaTjRFDA2ThiiTxqjYkdPBkG7xrJ1uSMVzA/viewform?usp=sf_link">Loading…</iframe></div>
+        
+                    <div id="f5"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScrLp9Jbb69ZfY6JnCVSRUamCFucJCz126pkXGe4pJ0LcnU8A/viewform?usp=sf_link">Loading…</iframe></iframe></div>
+                    
+                    <div id="f6"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScif_SmpZpCqsXOG-KNJRadwBXsROdSYF20-bB1mUIWw3hDZw/viewform?usp=sf_link">Loading…</iframe></div>
+                    
+                    <div id="f7"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdzodgOFHAib8Cilmdy7byi-mmI2A8GZk4VKN44aSQGkxhUEg/viewform?usp=sf_link">Loading…</iframe></div>
+        
+                    <div id="f8"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfc6a3cU64feR_ERMrHK9lyGPsdDa0fApBhvKSjB7LLxe58qA/viewform?usp=sf_link">Loading…</iframe></div>
+        
+                    <div id="f9"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeSClxHLwfT7qcVJDUqDJSB3q-C3utmWD_nWPT2bUQcbkATAA/viewform?usp=sf_link">Loading…</iframe></div>
+                    
+                    <div id="f10"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeng8Sc5lPe44sS8Q1vAC91U-f3VI9W8zDY2HiDQ10wlccZfw/viewform?usp=sf_link">Loading…</iframe></div>
+        
+                    <div id="f11"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdHwL3--zMQnqDVrujxmN-NkBxIsr6YgpbxM_hV1RdTbQdteA/viewform?usp=sf_link">Loading…</iframe></div>
+        
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload = () => {
+                if (!sessionStorage.getItem("LXID")) {
+                    let my_url = "../login.html";
+                    setTimeout(function () {
+                        window.location.replace(my_url);
+                    }, 1000);
+                }
+            };
+        </script>
+    </body>
+</html>
