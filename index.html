@@ -440,26 +440,7 @@
                         </div>
                     </center>
                 </div>
-                <!-- <div class="card">
-                    <center><img src="./images/Aditya.jpeg" /></center>
-                    <center>
-                        <div class="card-title">Aditya Pratap Singh</div>
-                        <div id="detail">
-                            <p>
-                                “ Education is the first step for people to gain
-                                the knowledge, critical thinking, empowerment
-                                and skills they need to make this world a better
-                                place. “
-                            </p>
-                            <div class="duty"></div>
-                            <a
-                                href="https://www.linkedin.com/in/aditya-pratap-singh-16a0b8144"
-                                target="_blank"
-                                ><button class="btn-aditya">Follow +</button></a
-                            >
-                        </div>
-                    </center>
-                </div> -->
+                
             </div>
         </div>
         <!-- team section end -->
@@ -548,21 +529,21 @@
           </div>
           <div class="feed-container">
             <div class="feed-form">
-              <form action="mailto:farddinkhan733@gmail.com" method="post">
+              <form>
                 <label for=""> Your Name</label>
-                <br><input type="text" name="" id="">
+                <br><input type="text"  id="name1">
                 <br>
                 <br>
                 <label for="" >Email</label>
                 <br>
-                <input type="text" id="em">
+                <input type="text" id="mail1">
                 <br><br>
                 <label for="">Additional Details</label>
                 <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name=""  cols="30" rows="10" id="userfeedback"></textarea>
                 </textarea>
                 <br><br>
-                <button type="submit" class="bt" >Submit</button>
+                <button type="submit" class="bt" id="insert_feedback" onclick="readform1()" >Submit</button>
               </form>
             </div>
           </div>
@@ -627,10 +608,11 @@
           <div class="border"></div>
           <br />
           <p>Enter Your Email to get our News and updates.</p>
-          <form class="newsletter-form">
-            <input class="txtb" type="email" placeholder="Enter Your Email" />
-            <input class="btn" type="submit" value="Submit" />
-          </form>
+           <!-- <form class="newsletter-form"> -->
+            <input class="txtb" type="text" placeholder="Enter Your name" id="name2" >
+            <input class="txtb" type="text" placeholder="Enter Your email" id="email2" >
+            <button type="submit" class="btn" id="emailSend" >Submit</button>
+          <!-- </form> -->
         </div>
       </div>
     </footer>
