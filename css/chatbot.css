@@ -7,7 +7,7 @@
 }
 
 .collapsible {
-    background-color: rgb(82, 151, 255);
+    background: linear-gradient(to right, #a83279, #ffbb3b);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -38,13 +38,13 @@
 }
 
 .outer-container {
-    min-height: 500px;
+    min-height: 400px;
     bottom: 0%;
     position: relative;
 }
 
 .chat-container {
-    max-height: 500px;
+    max-height: 400px;
     width: 100%;
     position: absolute;
     bottom: 0;
