@@ -1,6 +1,6 @@
-# LearnX
 
-LearnX is a unique, fascinating and specialized e-learning website. It can enable every learner to achieve his or her potential, and help to build an educational workforce empowered to change. This website helps the users in building strong concepts by providing video lectures, free online courses proper guidance and also provide sample papers of various competitive exams. This website provides ample 24/7 knowledge to users.
+
+Gurukul is a unique, fascinating and specialized e-learning website. It can enable every learner to achieve his or her potential, and help to build an educational workforce empowered to change. This website helps the users in building strong concepts by providing video lectures, free online courses proper guidance and also provide sample papers of various competitive exams. This website provides ample 24/7 knowledge to users.
 
 In this website we will take the feedback from the users so that we can modify our website as per the requirements of the users. Most preferred video lectures are directly available here so it will save the time of users.
 
