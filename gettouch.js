@@ -18,6 +18,9 @@ document.getElementById("insert").onclick = function(){
         User_mail_id : emailv,
         User_message : message
     })
+    document.getElementById("name").value= "";
+    document.getElementById("mail").value= "";
+    document.getElementById("message").value= "";
     alert("Thanks Our Team Will Contact you Soon");
     
 }
